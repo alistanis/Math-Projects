@@ -22,10 +22,10 @@ int main(int argc, const char * argv[])
 long long sumSquares(long long *sumSquare)
 	{
 		long long i = 1;
-		long long k;
+		long long k = 0;
 	for (i; i <=100 ; i++)
 		{
-	    	k = pow(i, 2);
+	    	k = (int)pow(i, 2);
 	    	
 	    	*sumSquare += k;
 	    	

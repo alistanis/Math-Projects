@@ -43,14 +43,11 @@ int main (int argc, const char * argv[])
 bool IsItPrime(int candidate)
 {
 	int i, last;
-	if (candidate < 2)
+	if (candidate < 2) {
 		return false;
-	else
-	{
-		last = sqrt(candidate);
-
-		for (i = 2; i <= last; i++)
-		{
+	} else {
+		last = (int)sqrt(candidate);
+		for (i = 2; i <= last; i++) {
 			if((candidate % i) == 0)
 				return false;
 		}

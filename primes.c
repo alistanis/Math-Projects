@@ -25,7 +25,7 @@ bool IsItPrime(int candidate)
 		return false;
 	else
 	{
-		last = sqrt(candidate);
+		last = (int)sqrt(candidate);
 
 		for (i = 2; i <= last; i++)
 		{

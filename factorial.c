@@ -16,9 +16,9 @@ long long calculateFactorial (long long numberToCalculate)
 	long long i; 
 	long long temporary = 1;
 	long long counter = 1;
-	long long previous = 1;
+	long long previous;
 
-	printf("Facorial for number %lld: \n", numberToCalculate);
+	printf("Factorial for number %lld: \n", numberToCalculate);
 	for (i=numberToCalculate; i > 1; i--)
 		{
 			previous = temporary;

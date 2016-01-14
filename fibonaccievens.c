@@ -2,7 +2,7 @@
 
 int main (int argc, const char * argv[])
 {
-	long long i = 1, current = 2, previous = 1, fib, result = 2, limit = 4000000;
+	long long current = 2, previous = 1, fib, result = 2, limit = 4000000;
 	
 	while ((current+previous) < limit)
 	{

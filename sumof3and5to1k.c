@@ -2,7 +2,7 @@
 
 int main(int argc, const char * argv[])
 {
-	int i, result;
+	int i, result = 0;
 
 	for (i = 3; i < 1000; i++)
 	{

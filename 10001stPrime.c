@@ -2,12 +2,27 @@
 #include <stdbool.h>
 #include <math.h>
 
-bool IsItPrime ( int candidate );
+bool IsItPrime(int candidate)
+{
+	int i, last;
+	if (candidate < 2)
+		return false;
+	else
+	{
+		last = (int)sqrt(candidate);
+		for (i = 2; i <= last; i++)
+		{
+			if((candidate % i) == 0)
+				return false;
+		}
+	}
+	return true;
+}
 
 int main (int argc, const char * argv[])
 {
 	int i = 1;
-	int counter;
+	int counter = 0;
 	while (counter < 10001)
 	{
 		
@@ -27,20 +42,3 @@ int main (int argc, const char * argv[])
 	return 0;
 }
 
-bool IsItPrime(int candidate)
-{
-	int i, last;
-	if (candidate < 2)
-		return false;
-	else
-	{
-		last = sqrt(candidate);
-
-		for (i = 2; i <= last; i++)
-		{
-			if((candidate % i) == 0)
-				return false;
-		}
-	}
-	return true;
-}

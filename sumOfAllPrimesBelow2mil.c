@@ -8,7 +8,7 @@ int main (int argc, const char * argv[])
 {
 	int i = 1;
 	int counter;
-	long long sum;
+	long long sum = 0;
 	while (i <= 2000000)
 	{
 		
@@ -32,7 +32,7 @@ bool IsItPrime(int candidate)
 		return false;
 	else
 	{
-		last = sqrt(candidate);
+		last = (int)sqrt(candidate);
 
 		for (i = 2; i <= last; i++)
 		{
